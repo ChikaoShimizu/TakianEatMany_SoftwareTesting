@@ -11,6 +11,7 @@ public class GradeCalculatorTest {
 
     @Test
     public void lowerBoundOfEachGrade() {
+        assertEquals("A", calc.gradeOf(100));
         assertEquals("A", calc.gradeOf(80));
         assertEquals("B+", calc.gradeOf(75));
         assertEquals("B", calc.gradeOf(70));
